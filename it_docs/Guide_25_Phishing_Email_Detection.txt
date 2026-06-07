@@ -1,0 +1,10 @@
+Category: Security and Accounts
+Title: Investigating and Handling Suspected Phishing Emails
+ID: SEC_05
+Symptoms: Employees receive high-urgency emails mimicking executive staff or external banking platforms, demanding immediate credential confirmation.
+Resolution:
+1. Advise users never to open attached documents or click hyperlinks embedded inside suspicious messages.
+2. Open the email security administration console and search for the specific email message ID.
+3. Inspect email header configurations, validating Sender Policy Framework (SPF), DKIM, and DMARC alignments.
+4. If spoofing signatures are confirmed, flag the sender's domain global block list.
+5. Run a tenant-wide purge operation to remove matching messages out of all active employee mailboxes.

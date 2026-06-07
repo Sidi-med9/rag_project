@@ -1,0 +1,11 @@
+Category: Operating Systems
+Title: Troubleshooting Windows Blue Screen of Death (BSOD)
+ID: OS_01
+Symptoms: The system crashes unexpectedly displaying a blue screen with stop codes like CRITICAL_PROCESS_DIED or IRQL_NOT_LESS_OR_EQUAL.
+Resolution:
+1. Disconnect recently added external hardware to isolate device conflicts.
+2. Boot the operating system into Safe Mode.
+3. Open Command Prompt as Administrator and run the System File Checker command: sfc /scannow
+4. Deploy the DISM tool to repair the system image: DISM /Online /Cleanup-Image /RestoreHealth
+5. Update essential display and chipset drivers via Device Manager.
+6. Check RAM health using the Windows Memory Diagnostic utility.

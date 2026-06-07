@@ -1,0 +1,11 @@
+Category: Security and Accounts
+Title: Extracting and Applying BitLocker Hard Drive Recovery Keys
+ID: SEC_07
+Symptoms: Workstations lock users out upon startup, showing a blue screen requesting a 48-digit BitLocker recovery key due to boot configuration changes.
+Resolution:
+1. Locate the specific Recovery Key ID shown on the client machine's blue prompt screen.
+2. Log into the company's Active Directory or cloud management directory portal with administrative access.
+3. Locate the specific computer device record, open the security tab, and find the corresponding BitLocker recovery section.
+4. Read the 48-digit string matching the target Key ID to the user over a verified communications channel.
+5. Have the user input the sequence carefully into the client prompt to unlock the system disk.
+6. Once open, force a system state sync to refresh security descriptors.

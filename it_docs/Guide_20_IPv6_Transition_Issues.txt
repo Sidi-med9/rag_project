@@ -1,0 +1,10 @@
+Category: Networking and Communications
+Title: Fixing Connectivity Disruptions Caused by Misconfigured IPv6
+ID: NET_10
+Symptoms: Dual-stack network installations fail to access certain legacy network portals, or resolve web requests extremely slowly.
+Resolution:
+1. Check the client adapter details to see if an IPv6 address is successfully provisioned.
+2. Run diagnostic tests using IPv6 specific structures: ping -6 corporate-gateway
+3. If local routers are failing to hand out valid prefixes, temporarily prioritize IPv4 traffic over IPv6 in the OS settings.
+4. Update local router firmware to patch stateless address autoconfiguration (SLAAC) software bugs.
+5. If legacy applications fail to process the format, disable IPv6 bindings inside the network adapter properties panel.

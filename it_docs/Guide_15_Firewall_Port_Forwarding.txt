@@ -1,0 +1,11 @@
+Category: Networking and Communications
+Title: Setting Up Safe Inbound Firewall Port Forwarding Rules
+ID: NET_05
+Symptoms: Internal servers hosting services cannot receive connection requests originating from external networks.
+Resolution:
+1. Access the enterprise edge firewall management portal.
+2. Assign a strict reservation or static IP address to the internal destination server.
+3. Create an inbound rule defining the exact external port number and corresponding internal port number.
+4. Choose the specific protocol type required by the application: TCP, UDP, or both.
+5. Bind the forwarding rule explicitly to the incoming WAN interface.
+6. Use an external port scanning service to confirm the port status shows as open and responsive.

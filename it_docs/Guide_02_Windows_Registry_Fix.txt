@@ -1,0 +1,10 @@
+Category: Operating Systems
+Title: Repairing Corrupted System Files and Registry Entries
+ID: OS_02
+Symptoms: Core OS applications fail to launch, system performance degrades heavily, or missing DLL errors pop up.
+Resolution:
+1. Restart the machine and launch Command Prompt with elevated administrative privileges.
+2. Check file system integrity and fix logical errors on the disk: chkdsk C: /f /r
+3. Execute the SFC utility to restore missing system configurations.
+4. If registry hives are broken, use a stable System Restore point to roll back recent software alterations.
+5. Verify that the Windows Installer service is active by running 'services.msc'.
