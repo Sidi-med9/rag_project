@@ -1,0 +1,12 @@
+Category: Operating Systems
+Title: Rebuilding GRUB Boot Loader in Dual-Boot Environments
+ID: OS_05
+Symptoms: The computer boots directly into a GRUB rescue prompt or fails to locate the Linux partition after a Windows update.
+Resolution:
+1. Boot the machine using a Linux Live USB.
+2. Open the terminal and identify partition layouts: sudo fdisk -l
+3. Mount the root partition to the temporary directory: sudo mount /dev/sdXX /mnt
+4. Bind essential virtual file systems including dev, proc, and sys to the mount directory.
+5. Enter the root environment: sudo chroot /mnt
+6. Reinstall the bootloader code: grub-install /dev/sdX
+7. Update configuration files to detect all operating systems: update-grub

@@ -1,0 +1,11 @@
+Category: Security and Accounts
+Title: Setting Up a 3-2-1 Automated Enterprise Backup Routine
+ID: SEC_10
+Symptoms: Lack of disaster recovery assets to counter data loss incidents from physical unit damage or ransomware events.
+Resolution:
+1. Implement automated scheduler software to compile complete system snapshots nightly.
+2. Retain 3 distinct copies of corporate data (1 live operational dataset and 2 separate backup images).
+3. Record backup sets onto 2 distinct media hardware types (such as local high-speed NAS units and external storage blocks).
+4. Stream 1 complete set of daily backups to an offsite location or protected cloud vault object storage completely out of the local network topology.
+5. Enable immutable retention locks on cloud snapshots to prevent deletion by compromised network admin accounts.
+6. Perform monthly sandboxed data recovery tests to verify file recovery times and structural health.

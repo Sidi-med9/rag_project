@@ -1,0 +1,10 @@
+Category: Networking and Communications
+Title: Mounting Network Attached Storage (NAS) Shared Directories
+ID: NET_08
+Symptoms: User machines lose file access to central storage servers or receive network path errors upon login.
+Resolution:
+1. Verify the client machine is authenticated on the correct internal network segment.
+2. On Windows, use File Explorer, select 'Map network drive', and input target file path format: \\nas-server-ip\share-name
+3. Ensure 'Connect using different credentials' is selected if accessing protected internal infrastructure files.
+4. On macOS, use Finder, press Command + K, and type target path format: smb://nas-server-ip/share-name
+5. On Linux systems, verify access by adding an entry into /etc/fstab specifying cifs or nfs network file system options.

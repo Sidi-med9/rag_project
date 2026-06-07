@@ -1,0 +1,10 @@
+Category: Operating Systems
+Title: Fixing File Permissions and Application Launch Blockers on macOS
+ID: OS_04
+Symptoms: Applications crash on launch, or the system displays 'Permission Denied' prompts despite administrative access.
+Resolution:
+1. Open Terminal from the Utilities folder.
+2. Reset home directory permissions using the command line: diskutil resetUserPermissions / `id -u`
+3. For applications blocked by Gatekeeper, right-click the app and choose 'Open' to bypass strict signing restrictions.
+4. Clear the system launch services cache to eliminate faulty application associations.
+5. Verify folder permissions through the 'Get Info' panel, ensuring the user has Read and Write access.

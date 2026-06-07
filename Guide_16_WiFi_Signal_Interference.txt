@@ -1,0 +1,10 @@
+Category: Networking and Communications
+Title: Mitigating Wireless Signal Interference in Office Spaces
+ID: NET_06
+Symptoms: Wi-Fi networks suffer from high packet loss, slow data rates, and random drops despite close proximity to access points.
+Resolution:
+1. Run a Wi-Fi analyzer tool to audit channel occupancy across nearby networks.
+2. For 2.4 GHz deployments, explicitly configure access points to operate on non-overlapping channels: 1, 6, or 11.
+3. Move high-bandwidth devices over to the 5 GHz or 6 GHz bands to alleviate channel saturation.
+4. Identify and isolate physical interference sources such as unshielded power lines, brick walls, or microwave machinery.
+5. Adjust transmission power metrics on adjacent access points to minimize overlapping cell interference.

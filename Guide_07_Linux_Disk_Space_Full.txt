@@ -1,0 +1,10 @@
+Category: Operating Systems
+Title: Managing Critical Disk Space Depletion in Linux Servers
+ID: OS_07
+Symptoms: Server services fail to start, logs stop writing, and shell commands report 'No space left on device'.
+Resolution:
+1. Run disk free utility to check space distribution across filesystems: df -h
+2. Identify the largest directories starting from root: sudo du -sh /* 2>/dev/null | sort -rh | head -n 10
+3. Check and truncate bloated system log files under /var/log/.
+4. Clean up systemd journal logs to a specific size limit: sudo journalctl --vacuum-size=100M
+5. Empty the trash bin and remove unneeded temporary files inside the /tmp directory.

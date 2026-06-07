@@ -1,0 +1,10 @@
+Category: Networking and Communications
+Title: Resolving Local IP Address Conflicts on Client Devices
+ID: NET_02
+Symptoms: Client devices lose network connectivity showing an alert stating 'Another computer on this network has the same IP address'.
+Resolution:
+1. On Windows client, open Command Prompt and execute: ipconfig /release
+2. Request a brand new IP lease from the local DHCP pool: ipconfig /renew
+3. On macOS client, navigate to Network Preferences, click Advanced, enter the TCP/IP tab, and select 'Renew DHCP Lease'.
+4. If static IPs are assigned, verify that the custom IP sits outside the dynamic allocation range of the DHCP server.
+5. Restart the local network switch or router to flush dead ARP mapping entries.

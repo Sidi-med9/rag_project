@@ -1,0 +1,11 @@
+Category: Security and Accounts
+Title: Configuring Folder Security via Role-Based Access Control (RBAC)
+ID: SEC_09
+Symptoms: Unauthorized departments can view confidential files, or staff can delete documents outside their scope.
+Resolution:
+1. Right-click the sensitive target shared directory and enter Properties, then select the Security tab.
+2. Click Advanced to view explicit inheritance and security descriptors.
+3. Select 'Disable inheritance' and convert existing inherited rules into explicit individual permissions.
+4. Remove the default entry containing 'Everyone' or 'Authenticated Users'.
+5. Explicitly add verified Active Directory Security Groups representing targeted organizational roles (e.g., 'HR-Department').
+6. Assign explicit 'Read & Execute' controls to staff roles, reserving 'Full Control' properties strictly for Domain Admins.
